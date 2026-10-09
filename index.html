@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--METADATOs-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="5">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="estilos.css">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!--LOGO-->
+  <link rel="icon" href="img/logo.png">
+  <title>Portafolio de Katherine</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-personalizada">
+    <div class="container navbar-contenedor">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <img src="img/logo.png" alt="Logo de mi portafolio" width="65" height="auto">
+        <span>Mi portafolio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#habilidad1">Habilidades</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#experiencia1">Experiencia</a>
+          <a class="nav-link" href="#Contacto1">Contacto</a>
+          <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-contenido">
+      <!-- Columna izquierda: presentación -->
+      <div class="hero-texto">
+        <p class="hero-saludo">
+          ¡Hola! Bienvenida a mi espacio creativo
+        </p>
+
+        <h1 class="nombre">
+          Katherine Peralta Ñirriman
+        </h1>
+        <h3 id="profesion">
+          Desarrollo web &amp; diseño digital
+        </h3>
+        <p class="hero-descripcion">
+          Creo experiencias digitales que combinan
+          tecnología, funcionalidad y diseño.
+        </p>
+        <a href="#sobre-mi" class="boton-hero">
+          Conoce más
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Columna derecha: ilustración -->
+      <div class="hero-ilustracion">
+        <img
+          src="img/imagenpc.png"
+          alt="Ilustración creativa de mi portafolio"
+          class="imagen-hero">
+      </div>
+    </div>
+  </section>
+
+  <!--Qué hago?
+    <section>
+      <h3  style="text-align: center;">¿Qué Hago?</h3>
+      <p style="text-align: center;"> 
+        01 — Diseño web
+             Diseño sitios web claros, atractivos y adaptados a las necesidades de cada proyecto.
+        </br>
+        02 — Desarrollo web
+             Construyo sitios web funcionales a partir de ideas y diseños, cuidando la estructura, 
+             el código y la experiencia de navegación.
+        </br>
+        03 — Diseño UI/UX
+             Creo interfaces intuitivas y organizo el contenido pensando en que las personas puedan 
+             utilizar cada producto digital de forma sencilla.  
+      </p>
+    </section>-->
+
+  <!-- Sobre mí -->
+  <section class="SobreMi" id="sobre-mi">
+    <h3 class="titulo-sobre-mi">Sobre mí</h3>
+    <div class="sobre-mi-contenido">
+      <p>
+        Soy ingeniera en informática con interés en el desarrollo web y el diseño digital.
+        Me gusta combinar tecnología y creatividad para crear experiencias digitales
+        funcionales, intuitivas y visualmente atractivas.
+      </p>
+      <p>
+        Disfruto aprender nuevas herramientas, explorar ideas y cuidar los detalles de cada
+        proyecto. Mi objetivo es seguir creciendo profesionalmente y desarrollar soluciones
+        digitales que sean útiles y agradables para las personas.
+      </p>
+    </div>
+    <div class="sobre-mi-tarjetas">
+      <article class="tarjeta-sobre-mi">
+        <i class="bi bi-code-slash"></i>
+        <h4>Desarrollo web</h4>
+        <p>
+          Me interesa crear sitios web funcionales, accesibles y adaptables
+          a distintos dispositivos.
+        </p>
+      </article>
+      <article class="tarjeta-sobre-mi">
+        <i class="bi bi-palette"></i>
+        <h4>Diseño digital</h4>
+        <p>
+          Disfruto explorar colores, tipografías e ideas visuales para dar
+          personalidad a cada proyecto.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="habilidad" id="habilidad1">
+    <h3 style="text-align: center;">Habilidades</h3>
+    <div class="habilidad-contenedor">
+      <ul class="tarjeta-habilidad">
+        <li>
+          <i class="bi bi-code-slash icono-habilidad"></i>
+          <h5>Desarrollo web</h5>
+        </li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <ul class="tarjeta-habilidad">
+        <li>
+          <i class="bi bi-palette icono-habilidad"></i>
+          <h5>Diseño digital</h5>
+        </li>
+        <li>Diseño web</li>
+        <li>Branding</li>
+        <li>Canva</li>
+      </ul>
+      <ul class="tarjeta-habilidad">
+        <li>
+          <i class="bi bi-pc-display icono-habilidad"></i>
+          <h5>Informática</h5>
+        </li>
+        <li>Soporte TI</li>
+        <li>Resolución de problemas</li>
+        <li>Gestión de sistemas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="proyecto" id="proyectos">
+    <h3 id="titulo-proyectos">Mis proyectos</h3>
+    <p class="proyectos-descripcion">
+      Una selección de proyectos donde combino tecnología,
+      funcionalidad y creatividad.
+    </p>
+    <div class="proyectos-contenedor">
+      <!-- Proyecto 1: Sitio web -->
+      <article class="tarjeta-proyecto">
+        <div class="proyecto-imagen">
+          <img src="img/web.png" alt="Vista previa de mi sitio web">
+        </div>
+        <div class="proyecto-info">
+          <span class="proyecto-categoria">Desarrollo web</span>
+          <h4>Sitio web publicado</h4>
+          <p> Diseño y desarrollo de un sitio web utilizando HTML, CSS y Bootstrap. </p>
+          <a href="https://yoongicl.netlify.app/" target="_blank" rel="noopener noreferrer"
+            class="proyecto-enlace"> Ver proyecto <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+      <!-- Proyecto 2: Branding -->
+      <article class="tarjeta-proyecto">
+        <div class="proyecto-imagen">
+          <img src="img/ST.png" alt="Vista previa de mi branding">
+        </div>
+        <div class="proyecto-info">
+          <span class="proyecto-categoria">Identidad visual</span>
+          <h4>Branding de servicio técnico</h4>
+          <p> Desarrollo de una identidad visual para un servicio técnico personal. </p>
+          <span class="proyecto-pendiente"> Próximamente </span>
+        </div>
+      </article>
+      <!-- Proyecto 3: Portafolio -->
+      <article class="tarjeta-proyecto">
+        <div class="proyecto-imagen">
+          <img src="img/insta.png" alt="Vista previa de mi branding">
+        </div>
+        <div class="proyecto-info">
+          <span class="proyecto-categoria">Diseño digital</span>
+          <h4>Diseño para redes sociales</h4>
+          <p> Diseño de publicaciones para cuenta de fans en instagram,
+            para representar mi identidad creativa y profesional. </p>
+          <span class="proyecto-pendiente"> Próximamente </span>
+        </div>
+      </article>
+      <!-- Proyecto 4: World of Warcraft -->
+      <article class="tarjeta-proyecto">
+        <div class="proyecto-imagen">
+          <img src="img/web-wow.png" alt="Vista previa de mi branding">
+        </div>
+        <div class="proyecto-info">
+          <span class="proyecto-categoria">En desarrollo</span>
+          <h4>Guía para nuevos jugadores</h4>
+          <p> Proyecto web con contenido y recursos para quienes comienzan
+            a jugar World of Warcraft. </p>
+          <span class="proyecto-pendiente"> En desarrollo </span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia" id="experiencia1">
+    <h3 class="titulo-experiencia">Experiencia</h3>
+    <p class="experiencia-descripcion">
+      Mi trayectoria combina desarrollo web, diseño digital
+      y creación de contenido, a través de proyectos personales
+      y colaboraciones creativas.
+    </p>
+    <div class="experiencia-contenedor">
+      <!-- Desarrollo web -->
+      <article class="tarjeta-experiencia">
+        <div class="experiencia-icono">
+          <i class="bi bi-code-slash"></i>
+        </div>
+        <h4>Desarrollo web</h4>
+        <p>
+          He desarrollado sitios web utilizando HTML, CSS
+          y Bootstrap, llevando uno de mis proyectos
+          hasta su publicación en internet. Actualmente,
+          también trabajo en una web de recursos para
+          nuevos jugadores de World of Warcraft.
+        </p>
+        <span class="experiencia-etiqueta">
+          Proyectos personales
+        </span>
+      </article>
+      <!-- Diseño e identidad visual -->
+      <article class="tarjeta-experiencia">
+        <div class="experiencia-icono">
+          <i class="bi bi-palette"></i>
+        </div>
+        <h4>Diseño e identidad visual</h4>
+        <p>
+          He creado logos e identidades visuales para
+          proyectos propios y de otras personas,
+          explorando la combinación de colores,
+          tipografías y elementos gráficos.
+        </p>
+        <span class="experiencia-etiqueta">
+          Diseño independiente
+        </span>
+      </article>
+      <!-- Creación de contenido -->
+      <article class="tarjeta-experiencia">
+        <div class="experiencia-icono">
+          <i class="bi bi-images"></i>
+        </div>
+        <h4>Creación de contenido digital</h4>
+        <p>
+          He diseñado publicaciones para una cuenta fan
+          de Instagram, creando piezas gráficas para
+          compartir contenido con una comunidad digital.
+        </p>
+        <span class="experiencia-etiqueta">
+          Diseño para redes sociales
+        </span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto1">
+    <h3 class="titulo-contacto">Hablemos 💜</h3>
+    <p class="contacto-descripcion">
+      ¿Tienes una idea, un proyecto o simplemente quieres
+      ponerte en contacto conmigo? ¡Me encantará leerte!
+    </p>
+    <div class="contacto-contenedor">
+      <a href="mailto:suportpixie@gmail.com"
+        class="contacto-enlace">
+        <i class="bi bi-envelope"></i>
+        <span>Envíame un correo</span>
+      </a>
+      <a href="https://www.linkedin.com/in/katherine-peralta-%C3%B1irriman-123095b1/?isSelfProfile=true"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contacto-enlace">
+        <i class="bi bi-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="piedepagina">
+    <a href="#inicio" class="footer-logo" aria-label="Volver al inicio">
+      <img
+        src="img/logo4.png"
+        alt="Volver al inicio">
+    </a>
+    <p>© 2026 Katherine Peralta Ñirriman. Todos los derechos reservados.</p>
+    <a href="#inicio" class="footer-inicio">
+      Volver al inicio
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
