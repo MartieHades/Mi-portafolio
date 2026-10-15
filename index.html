@@ -20,7 +20,7 @@
 
 <body>
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-personalizada">
+  <nav class="navbar navbar-expand-lg navbar-personalizada sticky-top">
     <div class="container navbar-contenedor">
 
       <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
@@ -71,10 +71,7 @@
       </div>
       <!-- Columna derecha: ilustración -->
       <div class="hero-ilustracion">
-        <img
-          src="img/imagenpc.png"
-          alt="Ilustración creativa de mi portafolio"
-          class="imagen-hero">
+        <img src="img/imagenpc.png" alt="Ilustración creativa de mi portafolio" class="imagen-hero">
       </div>
     </div>
   </section>
@@ -181,8 +178,8 @@
           <span class="proyecto-categoria">Desarrollo web</span>
           <h4>Sitio web publicado</h4>
           <p> Diseño y desarrollo de un sitio web utilizando HTML, CSS y Bootstrap. </p>
-          <a href="https://yoongicl.netlify.app/" target="_blank" rel="noopener noreferrer"
-            class="proyecto-enlace"> Ver proyecto <i class="bi bi-arrow-up-right"></i>
+          <a href="https://yoongicl.netlify.app/" target="_blank" rel="noopener noreferrer" 
+          class="proyecto-enlace"> Ver proyecto <i class="bi bi-arrow-up-right"></i>
           </a>
         </div>
       </article>
@@ -195,7 +192,7 @@
           <span class="proyecto-categoria">Identidad visual</span>
           <h4>Branding de servicio técnico</h4>
           <p> Desarrollo de una identidad visual para un servicio técnico personal. </p>
-          <span class="proyecto-pendiente"> Próximamente </span>
+          <span class="proyecto-realizado"> Proyecto realizado </span>
         </div>
       </article>
       <!-- Proyecto 3: Portafolio -->
@@ -208,7 +205,7 @@
           <h4>Diseño para redes sociales</h4>
           <p> Diseño de publicaciones para cuenta de fans en instagram,
             para representar mi identidad creativa y profesional. </p>
-          <span class="proyecto-pendiente"> Próximamente </span>
+          <span class="proyecto-realizado"> Diseños realizados </span>
         </div>
       </article>
       <!-- Proyecto 4: World of Warcraft -->
@@ -295,15 +292,12 @@
       ponerte en contacto conmigo? ¡Me encantará leerte!
     </p>
     <div class="contacto-contenedor">
-      <a href="mailto:suportpixie@gmail.com"
-        class="contacto-enlace">
+      <a href="mailto:suportpixie@gmail.com" class="contacto-enlace">
         <i class="bi bi-envelope"></i>
         <span>Envíame un correo</span>
       </a>
-      <a href="https://www.linkedin.com/in/katherine-peralta-%C3%B1irriman-123095b1/?isSelfProfile=true"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="contacto-enlace">
+      <a href="https://www.linkedin.com/in/katherine-peralta-%C3%B1irriman-123095b1/?isSelfProfile=true" target="_blank"
+        rel="noopener noreferrer" class="contacto-enlace">
         <i class="bi bi-linkedin"></i>
         <span>LinkedIn</span>
       </a>
@@ -313,19 +307,45 @@
   <!-- Footer -->
   <footer class="piedepagina">
     <a href="#inicio" class="footer-logo" aria-label="Volver al inicio">
-      <img
-        src="img/logo4.png"
-        alt="Volver al inicio">
+      <img src="img/logo4.png" alt="Volver al inicio">
     </a>
     <p>© 2026 Katherine Peralta Ñirriman. Todos los derechos reservados.</p>
-    <a href="#inicio" class="footer-inicio">
+    <!--<a href="#inicio" class="footer-inicio">
       Volver al inicio
       <i class="bi bi-arrow-up"></i>
-    </a>
+    </a>-->
   </footer>
 
+  <!--Boton para volver a inicio (Back to Top Button)-->
+  <button id="btnVolverArriba" title="volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <!--Script del boton-->
+  <script>
+    const btnVolverArriba = document.getElementById("btnVolverArriba");
+    window.addEventListener("scroll", () => 
+    {
+      if (window.scrollY > 300) 
+      {
+        btnVolverArriba.classList.add("visible");
+      } else {
+        btnVolverArriba.classList.remove("visible");
+      }
+    });
+
+    btnVolverArriba.addEventListener("click", () => 
+    {
+      window.scrollTo(
+      {
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

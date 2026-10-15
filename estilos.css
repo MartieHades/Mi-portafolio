@@ -516,7 +516,7 @@
 
 .proyecto-enlace
 {
-  color: #7D32B5;
+  color: #A78BFA;
   font-weight: 600;
   text-decoration: none;
   margin-top: auto;
@@ -528,9 +528,16 @@
   text-decoration: underline;
 }
 
+.proyecto-realizado
+{
+  color: #09c260;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: auto;
+}
 .proyecto-pendiente
 {
-  color: #8C7899;
+  color: #d69b2d;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: auto;
@@ -916,4 +923,28 @@ html
 section[id]
 {
   scroll-margin-top: 20px;
+}
+
+/*boton volver arriba*/
+#btnVolverArriba
+{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #8b68f5;
+  color:  #171421;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+#btnVolverArriba.visible 
+{
+    opacity: 1;
+    visibility: visible;
 }
